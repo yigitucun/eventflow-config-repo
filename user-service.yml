@@ -1,9 +1,14 @@
-logging:
-  level:
-    root: warn
 spring:
   main:
     banner-mode: off
+  datasource:
+    url: jdbc:postgresql://user-service-db:5433/user
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+logging:
+  level:
+    root: warn
 eureka:
   client:
     service-url:
