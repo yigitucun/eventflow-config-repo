@@ -1,3 +1,14 @@
+spring:
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+            - id: user-service-route
+              predicates:
+                - Path=/api/**
+              uri: lb://USER-SERVICE
+
 eureka:
   client:
     service-url:
