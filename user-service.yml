@@ -2,7 +2,7 @@ spring:
   main:
     banner-mode: off
   datasource:
-    url: jdbc:postgresql://user-service-db:5432/user
+    url: jdbc:postgresql://localhost:5432/user
     username: postgres
     password: root
     driver-class-name: org.postgresql.Driver
