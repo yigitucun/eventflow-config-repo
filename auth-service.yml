@@ -1,6 +1,12 @@
 spring:
   main:
     banner-mode: off
+  cloud:
+    openfeign:
+      client:
+        config:
+          user-service: 
+            url: http://localhost:8081
 logging:
   level:
     root: warn
@@ -13,9 +19,3 @@ jwt:
   access-token-expiration: 900000
   refresh-token-expiration: 604800000
 
-cloud:
-    openfeign:
-      client:
-        config:
-          user-service: 
-            url: http://localhost:8081
