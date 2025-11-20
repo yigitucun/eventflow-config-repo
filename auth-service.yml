@@ -12,3 +12,10 @@ jwt:
   secret: RXZlbnRGbG93UHJvamVzaWljaW5Db2tHaXpsaUJpckFuYWh0YXIyMDI1
   access-token-expiration: 900000
   refresh-token-expiration: 604800000
+
+cloud:
+    openfeign:
+      client:
+        config:
+          user-service: 
+            url: http://localhost:8081
