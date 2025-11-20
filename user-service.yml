@@ -13,10 +13,6 @@ logging:
   level:
     root: warn
 eureka:
-  instance:
-    hostname: localhost
-    prefer-ip-address: false
-    
   client:
     service-url:
       defaultZone: http://discovery-service:8761/eureka
