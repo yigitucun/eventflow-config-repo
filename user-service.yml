@@ -14,7 +14,7 @@ logging:
     root: warn
 eureka:
   instance:
-    host: localhost
+    hostname: localhost
     prefer-ip-address: false
     
   client:
