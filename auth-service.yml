@@ -1,12 +1,6 @@
 spring:
   main:
     banner-mode: off
-  cloud:
-    openfeign:
-      client:
-        config:
-          user-service: 
-            url: http://localhost:8081
 logging:
   level:
     root: warn
