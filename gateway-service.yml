@@ -8,7 +8,7 @@ spring:
               predicates:
                 - Path=/api/users/**, /api/roles/**
               uri: lb://USER-SERVICE
-            -id: auth-service-route
+            - id: auth-service-route
             predicates:
             - Path=/api/auth/**
             uri: lb://AUTH-SERVICE
