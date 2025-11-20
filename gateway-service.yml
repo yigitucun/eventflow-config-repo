@@ -6,7 +6,7 @@ spring:
           routes:
             - id: user-service-route
               predicates:
-                - Path=/api/**
+                - Path=/api/users/**, /api/roles/**
               uri: lb://USER-SERVICE
 
 eureka:
