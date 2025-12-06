@@ -1,6 +1,9 @@
 spring:
   main:
     banner-mode: off
+  data:
+    redis:
+      host: auth-service-db
 logging:
   level:
     root: warn
