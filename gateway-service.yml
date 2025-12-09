@@ -8,16 +8,22 @@ spring:
               predicates:
                 - Path=/api/users/**, /api/roles/**
               uri: lb://USER-SERVICE
+              filters:
+                - AuthenticationFilter
 
             - id: auth-service-route
               predicates:
                 - Path=/api/auth/**
               uri: lb://AUTH-SERVICE
+              filters:
+                - AuthenticationFilter
               
             - id: event-service-route
               predicates:
                 - Path=/api/events/**
               uri: lb://EVENT-SERVICE
+              filters:
+                - AuthenticationFilter
 
 eureka:
   client:
