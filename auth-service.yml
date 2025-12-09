@@ -11,8 +11,4 @@ eureka:
   client:
     service-url:
       defaultZone: http://discovery-service:8761/eureka
-jwt:
-  secret: RXZlbnRGbG93UHJvamVzaWljaW5Db2tHaXpsaUJpckFuYWh0YXIyMDI1
-  access-token-expiration: 900000
-  refresh-token-expiration: 604800000
 
