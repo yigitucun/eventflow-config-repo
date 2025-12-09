@@ -1,6 +1,4 @@
 spring:
-  main:
-    banner-mode: off
   datasource:
     url: jdbc:postgresql://user-service-db:5432/user
     username: postgres
