@@ -1,29 +1,26 @@
 spring:
   cloud:
     gateway:
-      server:
-        webflux:
-          routes:
-            - id: user-service-route
-               predicates:
-                - Path=/api/users/**, /api/roles/**
-              uri: lb://USER-SERVICE
-              filters:
-                - Authentication
-  
-            - id: auth-service-route
-              predicates:
-                - Path=/api/auth/**
-              uri: lb://AUTH-SERVICE
-              filters:
-                - Authentication
-                
-            - id: event-service-route
-              predicates:
-                - Path=/api/events/**
-              uri: lb://EVENT-SERVICE
-              filters:
-                - Authentication
+      routes:
+        - id: user-service-route
+          predicates:
+            - Path=/api/users/**, /api/roles/**
+          uri: lb://USER-SERVICE
+          filters:
+            - Authentication
+
+        - id: auth-service-route
+          predicates:
+            - Path=/api/auth/**
+          uri: lb://AUTH-SERVICE
+
+        - id: event-service-route
+          predicates:
+            - Path=/api/events/**
+          uri: lb://EVENT-SERVICE
+          filters:
+            - Authentication
+
 
 eureka:
   client:
