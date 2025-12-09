@@ -13,6 +13,11 @@ spring:
               predicates:
                 - Path=/api/auth/**
               uri: lb://AUTH-SERVICE
+              
+            - id: event-service-route
+              predicates:
+                - Path=/api/event/**
+              uri: lb://EVENT-SERVICE
 
 eureka:
   client:
