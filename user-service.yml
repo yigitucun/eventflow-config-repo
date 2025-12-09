@@ -9,9 +9,6 @@ spring:
   sql:
     init:
       mode: always
-logging:
-  level:
-    root: warn
 eureka:
   client:
     service-url:
