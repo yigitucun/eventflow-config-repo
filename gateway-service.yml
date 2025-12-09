@@ -16,7 +16,7 @@ spring:
               
             - id: event-service-route
               predicates:
-                - Path=/api/event/**
+                - Path=/api/events/**
               uri: lb://EVENT-SERVICE
 
 eureka:
