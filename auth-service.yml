@@ -4,9 +4,6 @@ spring:
   data:
     redis:
       host: auth-service-db
-logging:
-  level:
-    root: warn
 eureka:
   client:
     service-url:
