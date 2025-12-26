@@ -23,12 +23,6 @@ spring:
               filters:
                 - Authentication
               
-           - id: ticket-service-route
-              predicates:
-                - Path=/api/tickets/**
-              uri: lb://TICKET-SERVICE
-              filters:
-                - Authentication
 
 eureka:
   client:
