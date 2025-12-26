@@ -1,11 +1,11 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5435/ticket
+    url: jdbc:postgresql://ticket-service-db:5432/ticket
     username: postgres
     password: root
     driver-class-name: org.postgresql.Driver
     rabbitmq:
-      host: localhost 
+      host: rabbitmq 
       port: 15672
       username: guest
       password: guest
@@ -15,4 +15,4 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://discovery-service:8761/eureka
